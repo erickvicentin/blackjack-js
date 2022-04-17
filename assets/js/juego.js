@@ -15,30 +15,35 @@ const CARDS_SPECIAL = ['A', 'J', 'Q', 'K']
  */
 const crearDeck = () => {
     CARDS_TYPES.forEach(x => {
-        for ( let i = 2; i <= 10; i++ ) {
-            deck.push(i+x)
+        for (let i = 2; i <= 10; i++) {
+            deck.push(i + x)
         }
     })
     CARDS_TYPES.forEach(x => {
         CARDS_SPECIAL.forEach(y => {
-            deck.push(y+x)
+            deck.push(y + x)
         })
     })
-    
+
     return _.shuffle(deck)
 }
 
 const pedirCarta = (deck) => {
-    
-    //Error Handling
-    if ( deck.length === 0 ) {
+
+    if (deck.length === 0) {
         throw 'No hay cartas en el mazo.'
     }
 
-    const carta = deck.pop(Math.trunc(Math.random()*deck.length+1))
-    console.log(deck)
-    console.log(carta)
+    return deck.pop(Math.trunc(Math.random() * deck.length + 1))
 }
 
+//pedirCarta(crearDeck())
+const valorCarta = carta => {
+    console.log(carta)
+    const valor = carta.substring(0, carta.length - 1)
+    return (isNaN(valor))
+        ? (valor === 'A') ? 11 : 10
+        : parseInt(valor)
+}
 
-pedirCarta(crearDeck())
+console.log(valorCarta(pedirCarta(crearDeck())))
