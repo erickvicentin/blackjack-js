@@ -2,7 +2,7 @@
 
 .titulo {
     text-align: center;
-    padding: 25px;
+    padding: 10px;
     font-size: 35px;
     background-color: black;
     color: white;
@@ -17,4 +17,32 @@
 
 #jugador-cartas, #computadora-cartas {
     height: 250px;
+}
+
+.empate {
+    padding: 15px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.player-win {
+    padding: 15px;
+    background-color: green;
+    text-align: center;
+    color: black;
+}
+
+.pc-win {
+    padding: 15px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.ambos-pierden {
+    padding: 15px;
+    background-color: yellow;
+    text-align: center;
+    color: black;
 }
