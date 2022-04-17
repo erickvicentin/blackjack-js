@@ -5,7 +5,7 @@ A Blackjack game, make it with HTML, CSS and Javascript ✨
 
 ## Authors
 
-- [@katherinepeterson](https://www.github.com/erickvicentin)
+- [@erickvicentin](https://www.github.com/erickvicentin)
 
 
 ## Installation
