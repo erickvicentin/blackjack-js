@@ -1,0 +1,20 @@
+
+
+.titulo {
+    text-align: center;
+    padding: 25px;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+}
+
+.carta {
+    width: 150px;
+    position: relative;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#jugador-cartas, #computadora-cartas {
+    height: 250px;
+}
