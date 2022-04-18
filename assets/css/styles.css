@@ -3,7 +3,6 @@
 .titulo {
     text-align: center;
     padding: 5px;
-    font-size: 24px;
     background-color: black;
     color: white;
 }
@@ -20,7 +19,7 @@
 }
 
 .result {
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,25 +28,25 @@
 .empate {
     background-color: yellow;
     color: black;
-    padding: 20px;
+    padding: 10px;
 }
 
 .player-win {
     background-color: green;
     color: black;
-    padding: 20px;
+    padding: 10px;
 }
 
 .pc-win {
     background-color: red;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 .ambos-pierden {
     background-color: yellow;
     color: black;
-    padding: 20px;
+    padding: 10px;
 }
 
 .btn {
