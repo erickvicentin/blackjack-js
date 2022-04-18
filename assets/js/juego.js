@@ -1,3 +1,4 @@
+(() => {
 //mazo
 let deck = []
 let puntosJugador = 0
@@ -168,3 +169,4 @@ const checkResultado = ( playerPoints, pcPoints ) => {
         resultado.append(resText)
     }
 }
+})()
