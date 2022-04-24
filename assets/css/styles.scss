@@ -1,0 +1,49 @@
+
+@mixin alert($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color: $color;
+    padding: 10px;
+}
+
+.empate {
+    @include alert(yellow, black )
+}
+
+.player-win {
+    @include alert(green, black )
+}
+
+.pc-win {
+    @include alert(red, white )
+}
+
+.ambos-pierden {
+    @include alert(yellow, black )
+}
+
+.titulo {
+    text-align: center;
+    @include alert(black, white)
+}
+
+.carta {
+    width: 150px;
+    position: relative;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#jugador-cartas, #computadora-cartas {
+    height: 250px;
+}
+
+.result {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-family:Arial, Helvetica, sans-serif;
+}
